@@ -199,8 +199,10 @@ public class SlideAlphaLayoutAnimator extends Animator{
     private void cancelAnimatorSets(List<AnimatorSet> animatorSets) {
         if (animatorSets != null) {
             int size = animatorSets.size();
+            List<AnimatorSet> list = new ArrayList<>(size);
+            list.addAll(animatorSets);
             for (int i = 0 ; i < size ; i++) {
-                animatorSets.get(i).cancel();
+                list.get(i).cancel();
             }
         }
     }

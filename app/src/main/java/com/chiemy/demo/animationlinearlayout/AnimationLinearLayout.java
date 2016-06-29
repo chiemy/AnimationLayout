@@ -54,13 +54,15 @@ public class AnimationLinearLayout extends LinearLayout implements AnimationLayo
             viewGroup.setClipChildren(false);
         }
         setClipChildren(false);
-        show();
+        if (getVisibility() == View.VISIBLE) {
+            show();
+        }
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-
+        animation.cancel();
     }
 
 }
