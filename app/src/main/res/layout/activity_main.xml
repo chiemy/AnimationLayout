@@ -34,27 +34,16 @@
             android:text="test2"
             />
 
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="test3"
-            />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="test4"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="test5"
-            />
-
     </com.chiemy.demo.animationlinearlayout.AnimationLinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rrecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout"
+        >
+
+    </android.support.v7.widget.RecyclerView>
 
     <Button
         android:id="@+id/test"
